@@ -1,0 +1,339 @@
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+
+    /*-----HEADER-----*/
+
+    .nav-links li {
+        padding: 0 40px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1025px to 1200px) */
+@media only screen and (max-width: 1200px) {
+    
+    /*-----HEADER-----*/
+
+    .nav-links li {
+        padding: 0 20px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 769px to 1024px) */
+@media only screen and (max-width: 1024px) {
+
+    /*-----HEADER-----*/
+
+    header {
+     padding-right: 0;
+    }
+
+    #social-icons-header a {
+        display:none;
+    }
+
+ 
+    
+    /*-----RAIL SERVICES-----*/
+
+    .img-title {
+        font-size: 0.8em;
+    }
+
+    .overlay-img-description {
+        font-size: 15px;
+    }   
+
+    .overlay-img-description li {
+        font-size: 16px;
+    }   
+
+    /*-----EVENT SERVICES-----*/
+
+    #struct-service:hover .main-img-title .img-title{
+        animation-name: title-slide-up;
+    }
+
+    #steel-title,
+    #prod-title,
+    #set-title,
+    #plant-title,
+    #tech-title,
+    #add-title {
+    font-size: 0.8em;
+    }
+
+     /*-----PORTFOLIO-----*/
+
+     .main-contact {
+         margin-top: 0;
+     }
+
+   /*-----CONTACT US-----*/
+
+   .deets .list-item {
+        display: block;
+        width: 100%;
+        text-align: start;
+    }
+
+    .deets .list-item a {
+        font-size: 30px;
+    }
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 481px to 768) */
+@media only screen and (max-width: 768px) {
+
+    /*-----HEADER-----*/
+  
+      .nav-links {
+          justify-content: space-evenly;
+          float: none;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 80px;
+          bottom: 100%;
+          width: 100%;
+          max-height: 200px;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.7);
+          overflow: hidden;
+          transition: all .5s ease-in-out;
+      }
+  
+      header :checked ~ .nav-links {
+          bottom: 0;
+      }
+  
+      .nav-links .dropbtn {
+          padding: 0;
+          width: 100%;
+          height: 20px;
+        
+      }
+  
+      .dropbtn {
+        position: static;
+      }
+  
+      .dropbtn:hover .dropdown-content {
+          display: static;
+      }
+  
+  
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+  
+      nav .icon-burger {
+          display: block;
+      }
+  
+      nav :checked ~ .icon-burger .line:nth-child(1) {
+              transform: translateY(10px) rotate(225deg);
+              transition: all .5s ease-in-out;
+          }
+  
+      nav :checked ~ .icon-burger .line:nth-child(3) {
+              transform: translateY(-10px) rotate(-225deg);
+              transition: all .5s ease-in-out;
+          }
+      nav :checked ~ .icon-burger .line:nth-child(2) {
+              opacity: 0;
+              transition: all .5s ease-in-out;
+          }
+  
+      
+        /*-----RAIL SERVICES-----*/
+  
+      .img-title {
+          font-size: 0.6em !important;
+      }
+  
+      .overlay-img-description {
+          font-size: 13px !important;
+      }   
+  
+      .overlay-img-description li {
+          font-size: 14px !important;
+      }  
+
+      .overlay-img-description li + li::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+      }
+      
+  
+   /*-----EVENT SERVICES-----*/
+   
+   #steel-title,
+   #prod-title,
+   #set-title,
+   #plant-title,
+   #tech-title,
+   #add-title {
+   font-size: 0.7em !important;
+   }
+
+   #steel-desc,
+   #prod-desc,
+   #set-desc,
+   #plant-desc,
+   #tech-desc,
+   #add-desc {
+   font-size: 0.75em !important;
+   }
+
+
+  
+  
+  
+  
+       /*--------PORTFOLIO--------*/
+  
+      .column {
+          flex: 50%;
+          max-width: 50%;
+            }
+  
+  
+      /*--------CONTACT US--------*/
+      .deets {
+          padding: 20px 0 0 0;
+  
+            }
+  
+      .list-item a {
+          font-size: 3vw !important;
+  
+      }
+  
+  
+  
+          /*--------FOOTER--------*/
+  
+      .footer-contact {
+          display: none;
+      }
+  
+      
+      .main-footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+      
+      }
+  
+      .footer-center {
+          text-align: left;
+          flex: 50%;
+      }
+  
+  
+      .social-icons {
+          display: inline-block;
+         text-align: end;
+          flex: 50%;
+      }
+  }
+
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+
+
+     
+    /*-----RAIL SERVICES-----*/
+
+    .img-title {
+        font-size: 0.4em !important;
+    }
+
+    .overlay-img-description {
+        font-size: 10px !important;
+    }   
+
+    .overlay-img-description li {
+        font-size: 11px !important;
+    }  
+
+
+    /*-----EVENT SERVICES-----*/
+
+    #steel-title,
+    #prod-title,
+    #set-title,
+    #plant-title,
+    #tech-title,
+    #add-title {
+    font-size: 0.6em !important;
+    }
+ 
+    #steel-desc,
+    #prod-desc,
+    #set-desc,
+    #plant-desc,
+    #tech-desc,
+    #add-desc {
+    font-size: 0.65em !important;
+    }
+
+    
+
+    
+
+
+    /*-----PORTFOLIO-----*/
+
+    .column {
+        flex: 100% !important;
+        max-width: 100% !important;
+    }    
+
+
+    /*------FOOTER--------*/
+
+   .main-footer {
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+  .social-icons a {
+      margin: 0;
+      display: inline;
+      padding: 10px;
+  }
+
+
+ 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV */
